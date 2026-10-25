@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    // Node runs our .ts files directly by stripping the types (no build step).
+    // These options make tsc reject TypeScript features Node can't strip
+    // (enums, namespaces, constructor parameter properties).
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+
+    "target": "es2023",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": ["src", "test"]
+}
