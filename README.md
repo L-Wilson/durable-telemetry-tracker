@@ -3,12 +3,14 @@ Durable Telemetry Tracker
 
 Design choices
 
+```text
 ┌──────────── Industrial PC ────────────────────────┐
 │                                                   │
 │  Trackers ──► Outbox (SQLite) ──► Forwarder ──────┼──► stdout
 │  sample,      holds messages      batches +       │    (= "the cloud")
 │  keep/drop    until delivered     publish         │
 └───────────────────────────────────────────────────┘
+```
 
 
 Storage
