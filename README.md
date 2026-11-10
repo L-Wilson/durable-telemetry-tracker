@@ -27,13 +27,12 @@ to stderr. Use `node src/main.ts` (or `npm start --silent`) rather than plain
 
 The outbox persists across runs. Delete `outbox.db*` to start empty.
 
-Optional environment variables (defaults match the challenge):
+Normal runs need no settings. The crash test uses three environment variables
+to control the app:
 
-| Variable               | Default     | Meaning                         |
-|------------------------|-------------|---------------------------------|
-| `OUTBOX_PATH`          | `outbox.db` | SQLite file for the outbox      |
-| `FORWARD_INTERVAL_MS`  | `10000`     | How often the forwarder runs    |
-| `PUBLISH_FAILURE_RATE` | `0.3`       | Chance that a publish fails     |
+- `OUTBOX_PATH` (default `outbox.db`): where the outbox file lives.
+- `FORWARD_INTERVAL_MS` (default `10000`, from the challenge): how often the forwarder runs.
+- `PUBLISH_FAILURE_RATE` (default `0.3`, my choice): how often publish fails.
 
 ### The tests
 
