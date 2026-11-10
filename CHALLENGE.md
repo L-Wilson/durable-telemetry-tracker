@@ -1,6 +1,6 @@
-# Code challenge: Durable telemetry tracker
+# Durable telemetry tracker
 
-At HEAT we build controllers for power plants. They sample hundreds of signals, decide which values are worth reporting, and forward them to the cloud over links that fail regularly. Power can be cut without warning, and data must not be lost along the way. This challenge is a small version of that problem.
+Controllers for power plants. They sample hundreds of signals, decide which values are worth reporting, and forward them to the cloud over links that fail regularly. Power can be cut without warning, and data must not be lost along the way. This challenge is a small version of that problem.
 
 Its main purpose is to give us a common basis for our next conversation, where we'll discuss your design choices, the trade-offs you made, and possible next steps. Every submission gets that conversation, and it's where we make our decision.
 
